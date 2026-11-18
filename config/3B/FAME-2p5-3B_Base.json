@@ -1,0 +1,107 @@
+{
+    "global_settings": {
+        "session_name": "FAME-2p5-3B",
+        "dataset_id": "ClaudioSavelli/FAME-other-splits",
+        "seed": 42,
+        "classic_cv_identities_per_fold": 2,
+        "subset": "forget_2p5"
+    },
+    "experiments": {
+        "Base": {
+            "model_id": "Base Model 3B 2.5%",
+            "hf_path": "ClaudioSavelli/FAME_base_llama32-3b-instruct-qa",
+            "attacks_to_run": [
+                {
+                    "name": "AttenMIA",
+                    "mode": "retain-based",
+                    "classifier": "LogisticRegression"
+                },
+                {
+                    "name": "AttenMIA",
+                    "mode": "retain-based",
+                    "classifier": "MLP"
+                },
+                {
+                    "name": "AttenMIA",
+                    "mode": "retain-based",
+                    "classifier": "SVM"
+                },
+                {
+                    "name": "AttenMIA",
+                    "mode": "classic-cv",
+                    "classifier": "LogisticRegression"
+                },
+                {
+                    "name": "AttenMIA",
+                    "mode": "classic-cv",
+                    "classifier": "MLP"
+                },
+                {
+                    "name": "AttenMIA",
+                    "mode": "classic-cv",
+                    "classifier": "SVM"
+                },
+                {
+                    "name": "Baseline",
+                    "mode": "retain-based",
+                    "classifier": "LogisticRegression"
+                },
+                {
+                    "name": "Baseline",
+                    "mode": "retain-based",
+                    "classifier": "MLP"
+                },
+                {
+                    "name": "Baseline",
+                    "mode": "retain-based",
+                    "classifier": "SVM"
+                },
+                {
+                    "name": "Baseline",
+                    "mode": "classic-cv",
+                    "classifier": "LogisticRegression"
+                },
+                {
+                    "name": "Baseline",
+                    "mode": "classic-cv",
+                    "classifier": "MLP"
+                },
+                {
+                    "name": "Baseline",
+                    "mode": "classic-cv",
+                    "classifier": "SVM"
+                },
+                {
+                    "name": "OR-MIA",
+                    "mode": "retain-based",
+                    "classifier": "LogisticRegression"
+                },
+                {
+                    "name": "OR-MIA",
+                    "mode": "retain-based",
+                    "classifier": "MLP"
+                },
+                {
+                    "name": "OR-MIA",
+                    "mode": "retain-based",
+                    "classifier": "SVM"
+                },
+                {
+                    "name": "OR-MIA",
+                    "mode": "classic-cv",
+                    "classifier": "LogisticRegression"
+                },
+                {
+                    "name": "OR-MIA",
+                    "mode": "classic-cv",
+                    "classifier": "MLP"
+                },
+                {
+                    "name": "OR-MIA",
+                    "mode": "classic-cv",
+                    "classifier": "SVM"
+                }
+            ]
+        }
+    }
+}
