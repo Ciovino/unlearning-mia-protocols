@@ -9,7 +9,7 @@ from scipy.stats import gaussian_kde
 import common as C
 
 MODELS = ["Base", "Gold", "KLM"]
-TITLES = {"Base": "Base (original model)", "Gold": "Gold (retrained without Forget)", "KLM": "KLM (unlearned)"}
+TITLES = {"Base": "Base", "Gold": "Gold", "KLM": "KLM"}
 COLORS = {"Forget": "#d62728", "Test": "#1f77b4", "Retain": "#2ca02c"}
 DRAW_ORDER = ["Retain", "Test", "Forget"]
 LEGEND_ORDER = ["Forget", "Retain", "Test"]
